@@ -1,0 +1,187 @@
+@import './variable.scss';
+
+/*Limit Height & Resize*/
+
+/*Div Table Setting*/
+.table__product {
+    
+    .button_create {
+        a {
+            border: 1px solid;
+            padding: 10px 15px;
+        }
+
+        margin-bottom: 20px;
+    }
+
+    .css_table {
+        display: table;
+        position: relative;
+        width: 100%;
+    }
+
+    .css_tr {
+        display: table-row;
+
+        &:hover {
+            background-color: $color__hover;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+    }
+
+    .css_tr:nth-child(even) .css_td {
+        border-top: 1px solid #cdcdcd;
+    }
+
+    .css_tr:nth-child(odd) .css_td {
+        border-top: 1px solid #cdcdcd;
+    }
+
+    .css_tr--bold {
+        font-weight: 600;
+    }
+
+    .css_td,
+    .css_th {
+        display: table-cell;
+        padding: 8px 10px;
+        white-space: nowrap;
+
+    }
+
+    .css_td {
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            border: 1px solid #976b43;
+            color: #976b43;
+            font-weight: 600;
+        }
+
+    }
+
+    .css_thead {
+        display: table-header-group;
+        font-weight: 600;
+        z-index: 100;
+        background-color: #fff;
+    }
+
+    .css_tbody {
+        display: table-row-group;
+        h3 {
+            margin-top: 1rem;
+            text-align: center;
+            a {
+                color: #976b43;
+            }
+        }
+    }
+
+    /*Table Header Fixed */
+    .css_th,
+    .css_sd {
+        position: sticky;
+        background-color: #f2f2f2;
+    }
+
+    .css_th {
+        top: 0;
+        color: #6c6c6c;
+    }
+
+    .css_thead div.css_th:first-child {
+        left: 0;
+        z-index: 1;
+    }
+
+    .css_td,
+    .css_th {
+        padding: 15px 40px;
+        font-weight: 600;
+    }
+
+    .css_tr_pd div.css_td-pdd {
+        padding-left: 70px;
+    }
+
+    /*Responsive Div Table*/
+    @media screen and (max-width: 650px) {
+        .css_table {
+            border: 0;
+        }
+
+        .css_table .css_thead,
+        .css_table .css_tfoot {
+            display: none;
+        }
+
+        .css_table .css_tr {
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .css_table .css_td,
+        .css_table .css_sd {
+            display: block;
+            text-align: right;
+            font-size: 13px;
+            border-bottom: 1px dotted #ccc;
+            border-left: 1px solid #ddd;
+        }
+
+        .css_table .css_td:last-child {
+            border-bottom: 0;
+        }
+
+        .css_table .css_td:before {
+            content: attr(data-label);
+            float: left;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .table_scroll {
+            margin: 0;
+            height: auto !important;
+        }
+
+        .css_tr:nth-child(even) .css_td {
+            background: #fff;
+        }
+
+        .css_tr div.css_td:first-child {
+            background-color: #f2f2f2;
+        }
+
+        .css_tr_pd div.css_td-pdd {
+            padding-left: 40px;
+        }
+    }
+
+    .pagination {
+        display: inline-block;
+        margin-top: 3rem;
+    }
+
+    .pagination a {
+        display: block;
+        color: #141414;
+        float: left;
+        padding: 0.5rem 1.5rem;
+        border: 0.1rem solid #fff;
+        transition: background-color .3s;
+        font-size: 1.6rem;
+    }
+
+    .pagination a.active {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+}

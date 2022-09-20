@@ -1,0 +1,144 @@
+.Cart__item {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        text-align: left;
+        padding: 1.5rem;
+    }
+
+
+    tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+    }
+
+    tbody tr td {
+        font-size: 1.5rem;
+    }
+
+    thead tr {
+        background-color: var(--primary-color);
+    }
+
+    thead tr th {
+        color: #fff;
+    }
+
+    .cart thead tr th,
+    .cart tbody tr td {
+        text-align: left;
+        padding: 1rem 4rem;
+        font-size: 1.5rem;
+    }
+
+    .checkout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .checkout__totalcart ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .checkout__totalcart ul li {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5rem;
+        font-size: 1.7rem;
+        background-color: #e9ecef;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .checkout__totalcart ul li p {
+        font-weight: 600;
+    }
+
+    .checkout__button {
+        display: flex;
+        gap: 1rem;
+    }
+    .checkout__button button {
+        padding: 0.5rem 3rem;
+    }
+
+    .btn_back {
+        border: 0.1rem solid var(--primary-color);
+        background-color: #fff;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .btn_checkout {
+        border: 0.1rem solid #868686;
+        background-color: var(--primary-color);
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .btn_back:hover {
+        border: 0.1rem solid #fff;
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .btn_checkout:hover {
+        border: 0.1rem solid var(--primary-color);
+        background-color: #fff;
+        color: var(--primary-color);
+    }
+
+    .input_quantity {
+        padding: 0.5rem;
+        width: 70px;
+    }
+
+    .img_cart {
+        width: 6rem;
+        border-radius: 50%;
+    }
+
+    .pagination {
+        display: inline-block;
+        margin-top: 3rem;
+    }
+
+    .pagination a {
+        display: block;
+        color: #141414;
+        float: left;
+        padding: 0.5rem 1.5rem;
+        border: 0.1rem solid #fff;
+        transition: background-color .3s;
+        font-size: 1.6rem;
+    }
+
+    .pagination a.active {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    .remove {
+        padding: 0.5rem 1rem;
+        border: 0.1rem solid var(--primary-color);
+        background-color: #fff;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    
+    .remove:hover {
+        border: 0.1rem solid #868686;
+        background-color: var(--primary-color);
+        color: #fff
+    }
+}

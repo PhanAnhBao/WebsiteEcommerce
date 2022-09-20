@@ -1,0 +1,20 @@
+.section--left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    & ul li a {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    
+    .categories, .brands {
+        border: 0.1rem solid var(--primary-color);
+        padding: 1.2rem;
+    }
+}

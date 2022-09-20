@@ -1,0 +1,85 @@
+.footer--logo img {
+    width: 15rem;
+}
+
+.footer--service {
+    display: flex;
+    gap: 4.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid var(--primary-color);
+}
+
+.pay img {
+    width: 30rem;
+}
+.footer--address__phone {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.copyright {
+    margin-top: 1rem;
+}
+
+.copyright p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.address a svg{
+    width: 4.5rem;
+    color: #868686;
+}
+.inline--svg {
+    display: flex;
+    gap: 1rem;
+}
+
+.inline--svg svg {
+    width: 2rem;
+    color: #868686;
+}
+
+.footer--service__address, .footer--information, .footer--categories, .footer--usefullinks, .footer--newsletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.footer--information ul,  .footer--categories ul, .footer--usefullinks ul, .footer--newsletter ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer--information ul li a,  .footer--categories ul li a, .footer--usefullinks ul li a, .footer--newsletter ul li a{
+   font-weight: 500;
+   color: #141414;
+}
+
+.newletters input {
+    padding: 1rem 2rem;
+    border: 0.1rem solid #f6f6f8;
+    border-radius: 2rem;
+}
+
+.newletters input:focus {
+    outline: none !important;
+    border: 0.1rem solid var(--tertiary-color);
+    transition: ease .3s;
+}
+
+.newletters button {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+.address a, .mail a, .phone a{
+    font-weight: 500;
+}

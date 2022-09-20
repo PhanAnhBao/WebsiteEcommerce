@@ -1,0 +1,9 @@
+$primary__color: #1a1a1a;
+$color__hover: #e6f0ff;
+$background__button: #f2f2f2;
+
+@mixin color-hover {
+    &:hover {
+        @content;
+    }
+}

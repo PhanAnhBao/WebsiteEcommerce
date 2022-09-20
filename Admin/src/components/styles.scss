@@ -1,0 +1,50 @@
+.loading {
+    margin: 0 auto;
+}
+.Main__admin {
+    
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2rem;
+}
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.10);
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    img {
+        width: 35rem;
+        height: 25rem;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    .manger {
+        padding: 1.5rem 2rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        background-color: #976b43;
+        border: none;
+        color: #fff;
+        letter-spacing: 0.2rem;
+        border: 1px solid #fff;
+        &:hover {
+            background-color: #fff;
+            color: #976b43;
+            border: 1px solid #976b43;
+            transition: 0.3s ease;
+            padding: 1.5rem 2rem;
+        }   
+    }
+}
